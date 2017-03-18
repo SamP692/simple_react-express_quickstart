@@ -1,5 +1,5 @@
-const db = require('../db');
-const sql = require('../sqlInjection/sqlProvider').users;
+const db = require('../db/db');
+const sql = require('../db/sqlInjection/sqlProvider').users;
 const User = require('../models/user');
 
 class UserDAO {
@@ -12,6 +12,7 @@ class UserDAO {
                console.log(`DAO Error: ${err}`);
              });
   }
+  
   static create({ name, email, password }) {
     return db.one(sql.create, [name, email, password])
              .then((row) => new User(row))

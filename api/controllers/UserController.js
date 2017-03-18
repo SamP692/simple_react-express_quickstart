@@ -16,10 +16,11 @@ class UserController {
                res.status(200).json(user);
              }
            })
-           .catch((err) => {
+           .catch(() => {
              res.status(401).end();
            });
   }
+  
   static register(req, res) {
     const name = req.body.name;
     const email = req.body.email;
@@ -41,6 +42,7 @@ class UserController {
       req.status(400).end();
     }
   }
+
   static logOut(req, res) {
     req.session.currentUser = null;
     res.clearCookie('token');
