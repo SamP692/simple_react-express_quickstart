@@ -1,0 +1,35 @@
+{
+  "name": "react_express_quickstart",
+  "version": "1.0.0",
+  "description": "Quickstart using React JS, Express JS, and Webpack",
+  "main": "index.js",
+  "author": "sam peterson",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "jsonwebtoken": "^7.1.9",
+    "morgan": "^1.7.0",
+    "pg-promise": "^5.3.4",
+    "radium": "^0.18.1",
+    "react": "^15.3.2",
+    "react-cookie": "^0.4.8",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.0"
+  }
+}
